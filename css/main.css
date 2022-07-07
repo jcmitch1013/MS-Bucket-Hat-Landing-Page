@@ -1,0 +1,326 @@
+body {
+  width: 100%;
+}
+#main-page {
+  position: absolute;
+  background-image: url("/img/hero.svg");
+  overflow: hidden;
+
+  background-color: navy;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  top: 0;
+  left: 0;
+}
+
+.logo {
+  position: absolute;
+  height: 100px;
+  fill-opacity: 0;
+  margin-left: 3%;
+  margin-top: 3%;
+}
+
+.hero-image {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+
+  top: 1%;
+  right: 1%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.hero-text {
+  margin-top: 15%;
+  margin-left: 3%;
+
+  color: white;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  line-height: 30px;
+}
+
+.hero-text h1 {
+  font-weight: 600;
+  font-size: 64px;
+}
+
+.hero-text h3 {
+  font-weight: 300;
+  padding-top: 0px;
+}
+
+.hero-text h5 {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 1px;
+}
+
+.shop-now-btn {
+  height: 50px;
+  margin-left: 3%;
+}
+
+.shop-now-btn:hover {
+  opacity: 50%;
+}
+
+.img-gallery {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  margin-left: 63%;
+  text-align: center;
+  height: 100%;
+}
+
+.pop-up {
+  padding-top: 20px;
+  margin: 20px;
+  height: 12%;
+}
+
+#hat_left {
+  position: relative;
+  top: 80%;
+  transition: top ease 0.5s;
+}
+
+#hat_left:hover {
+  transform: scale(1.25);
+  top: 75%;
+}
+
+#hat_right {
+  position: relative;
+  top: 80%;
+  transition: top ease 0.5s;
+}
+
+#hat_right:hover {
+  transform: scale(1.25);
+  top: 75%;
+}
+
+#mark_selfie {
+  position: relative;
+  top: 80%;
+  transition: top ease 0.5s;
+}
+
+#mark_selfie:hover {
+  transform: scale(1.25);
+  top: 75%;
+}
+
+.modal-images {
+  height: 100%;
+  width: 100%;
+}
+
+.left_mod {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mid_mod {
+  position: absolute;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.right_mod {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hidden {
+  display: none;
+}
+
+.modal-images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+@media only screen and (min-width: 360px) {
+  #main-page {
+    background-image: url(/img/mobile_hero.png);
+    background-color: navy;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    top: 0;
+    left: 0;
+  }
+  .logo {
+    height: 50px;
+  }
+  .hero-text {
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    margin: auto 0;
+    margin-top: 70%;
+  }
+
+  .hero-text h3 {
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: -10px;
+  }
+
+  .hero-text h1 {
+    text-align: center;
+    font-size: 24px;
+    line-height: 42px;
+    margin-bottom: -20px;
+  }
+
+  .hero-text h5 {
+    text-align: center;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    width: 90%;
+    padding-left: 5%;
+  }
+
+  .shop-now-btn {
+    height: 30px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .img-gallery {
+    width: 100%;
+    height: 20%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .pop-up {
+    margin-top: -50%;
+    margin-left: 1%;
+    margin-right: 1%;
+    height: 50%;
+  }
+
+  .left_mod {
+    height: 50%;
+  }
+
+  .right_mod {
+    height: 50%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #main-page {
+    background-image: url(/img/tablet_hero.png);
+    background-color: navy;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+
+    height: 100%;
+    width: 100%;
+  }
+  .logo {
+    height: 100px;
+  }
+  .hero-text {
+    width: 100%;
+    text-align: center;
+
+    margin-top: 70%;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .hero-text h3 {
+    font-size: 36px;
+    line-height: 48px;
+    margin-bottom: -25px;
+  }
+
+  .hero-text h1 {
+    text-align: center;
+    font-size: 48px;
+    line-height: 58px;
+    margin-bottom: 10px;
+  }
+
+  .hero-text h5 {
+    text-align: center;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0 auto;
+    letter-spacing: 3px;
+  }
+
+  .shop-now-btn {
+    position: absolute;
+    height: 40px;
+    top: 77%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin: 0;
+  }
+
+  .img-gallery {
+    width: 100%;
+    height: 20%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .pop-up {
+    margin-top: -50%;
+    margin-right: 1%;
+    margin-left: 1%;
+    height: 50%;
+  }
+
+  .left_mod {
+    height: 50%;
+  }
+
+  .right_mod {
+    height: 50%;
+  }
+}
