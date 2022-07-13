@@ -1,129 +1,141 @@
-body {
-  width: 100%;
-}
-#main-page {
-  position: absolute;
-  background-image: url("/img/hero.svg");
+html {
+  background-color: antiquewhite;
+  background-color: rgb(204, 192, 157);
+  background-image: url(/img/background-img.jpg);
+  background-size: 100%;
   overflow: hidden;
-
-  background-color: navy;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-
-  height: 100%;
-  width: 100%;
-  margin: 0;
   padding: 0;
+  margin: 0;
+}
 
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+header {
+  position: fixed;
+  background-color: rgb(0, 0, 0, 0.3);
+  height: 5%;
   top: 0;
-  left: 0;
+  width: 100%;
+  padding: 10px;
+  margin: 0;
 }
 
 .logo {
-  position: absolute;
-  height: 100px;
-  fill-opacity: 0;
-  margin-left: 3%;
-  margin-top: 3%;
-}
-
-.hero-image {
-  position: absolute;
-  width: 50%;
-  height: 100%;
-
-  top: 1%;
-  right: 1%;
-
-  display: flex;
-  justify-content: center;
+  height: 90%;
+  padding: auto;
 }
 
 .hero-text {
-  margin-top: 15%;
-  margin-left: 3%;
-
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 40%;
+  margin-left: 5%;
+  margin-top: auto;
+  padding: 25px;
   color: white;
+  font-family: 'Open Sans', sans-serif;
 
-  font-family: "Roboto", sans-serif;
-  font-size: 36px;
-  line-height: 30px;
+  backdrop-filter: brightness(30%);
+  border-radius: 20px;
 }
 
 .hero-text h1 {
-  font-weight: 600;
-  font-size: 64px;
+  font-weight: 300;
+  font-size: 5vh;
+
+  padding: 0;
+  margin: 0 auto;
 }
 
+.handmade-txt {
+  font-family: 'Homemade Apple';
+}
+
+.mark-btn:hover {
+  color: rgb(111, 160, 219);
+}
 .hero-text h3 {
-  font-weight: 300;
-  padding-top: 0px;
+  font-weight: 600;
+  font-size: 7vh;
+
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .hero-text h5 {
   font-weight: 300;
-  font-size: 24px;
-  line-height: 32px;
-  letter-spacing: 1px;
+  font-size: 3vh;
+  margin: 0;
 }
 
 .shop-now-btn {
-  height: 50px;
-  margin-left: 3%;
+  position: absolute;
+  color: white;
+  background-color: rgba(10, 12, 53, 0.639);
+  font-size: 3vh;
+  width: 20%;
+  height: 10%;
+
+  top: 80vh;
+  left: 5%;
+  margin: 10px;
 }
 
 .shop-now-btn:hover {
   opacity: 50%;
 }
 
-.img-gallery {
-  box-sizing: border-box;
+.product-images {
   position: absolute;
-  bottom: 0;
-  margin-left: 63%;
+  top: 22%;
+  left: 60%;
+  width: 30%;
+  height: 60%;
+}
+
+.main-image {
+  display: block;
+  width: 70%;
+  margin: auto;
+  box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.3);
+}
+
+.img-gallery {
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  top: 0;
+  left: 90%;
   text-align: center;
-  height: 100%;
 }
 
 .pop-up {
-  padding-top: 20px;
-  margin: 20px;
-  height: 12%;
+  position: relative;
+  height: 100%;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.3);
 }
 
 #hat_left {
-  position: relative;
-  top: 80%;
   transition: top ease 0.5s;
 }
 
 #hat_left:hover {
   transform: scale(1.25);
-  top: 75%;
 }
 
 #hat_right {
-  position: relative;
-  top: 80%;
   transition: top ease 0.5s;
 }
 
 #hat_right:hover {
   transform: scale(1.25);
-  top: 75%;
-}
-
-#mark_selfie {
-  position: relative;
-  top: 80%;
-  transition: top ease 0.5s;
-}
-
-#mark_selfie:hover {
-  transform: scale(1.25);
-  top: 75%;
 }
 
 .modal-images {
@@ -168,159 +180,75 @@ body {
   z-index: 5;
 }
 
-@media only screen and (min-width: 360px) {
-  #main-page {
-    background-image: url(/img/mobile_hero.png);
-    background-color: navy;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-
-    height: 100%;
-    width: 100%;
-    margin: 0;
+@media only screen and (orientation: portrait) {
+  html {
     padding: 0;
-
-    top: 0;
-    left: 0;
-  }
-  .logo {
-    height: 50px;
+    margin: 0;
+    overflow: auto;
   }
   .hero-text {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
     text-align: center;
-    width: 100%;
-    padding: 0;
-    margin: auto 0;
-    margin-top: 70%;
+    width: 70%;
+    top: 60%;
+    margin: 0 auto;
   }
-
-  .hero-text h3 {
-    font-size: 18px;
-    line-height: 18px;
-    margin-bottom: -10px;
-  }
-
   .hero-text h1 {
+    font-size: 5vh;
+    line-height: 5vh;
     text-align: center;
-    font-size: 24px;
-    line-height: 42px;
-    margin-bottom: -20px;
+    margin-bottom: 20px;
   }
-
+  .hero-text h3 {
+    font-size: 3vh;
+    text-align: center;
+    margin: 0 auto;
+  }
   .hero-text h5 {
     text-align: center;
-    font-size: 16px;
-    line-height: 18px;
-    letter-spacing: 2px;
-    width: 90%;
-    padding-left: 5%;
+    font-size: 2.5vh;
+    line-height: 3vh;
+    margin: 0;
   }
 
-  .shop-now-btn {
-    height: 30px;
+  .product-images {
+    position: fixed;
+    margin: 0 auto;
     width: 100%;
-    margin: 0;
+    left: 0;
+    top: 10%;
+  }
+  .main-image {
+    width: 35%;
+    margin: 0 auto;
   }
 
   .img-gallery {
-    width: 100%;
-    height: 20%;
-    margin: 0;
-    padding: 0;
+    top: 0;
+    left: 75%;
+    width: 10%;
+    height: 40%;
   }
 
   .pop-up {
-    margin-top: -50%;
-    margin-left: 1%;
-    margin-right: 1%;
-    height: 50%;
+    height: 30%;
   }
-
-  .left_mod {
-    height: 50%;
-  }
-
-  .right_mod {
-    height: 50%;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  #main-page {
-    background-image: url(/img/tablet_hero.png);
-    background-color: navy;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: contain;
-
-    height: 100%;
-    width: 100%;
-  }
-  .logo {
-    height: 100px;
-  }
-  .hero-text {
-    width: 100%;
-    text-align: center;
-
-    margin-top: 70%;
-    margin-left: 0;
-    padding: 0;
-  }
-
-  .hero-text h3 {
-    font-size: 36px;
-    line-height: 48px;
-    margin-bottom: -25px;
-  }
-
-  .hero-text h1 {
-    text-align: center;
-    font-size: 48px;
-    line-height: 58px;
-    margin-bottom: 10px;
-  }
-
-  .hero-text h5 {
-    text-align: center;
-    font-size: 18px;
-    line-height: 28px;
-    margin: 0 auto;
-    letter-spacing: 3px;
+  .content {
+    background-color: black;
   }
 
   .shop-now-btn {
     position: absolute;
-    height: 40px;
-    top: 77%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    margin: 0;
-  }
-
-  .img-gallery {
-    width: 100%;
-    height: 20%;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  .pop-up {
-    margin-top: -50%;
-    margin-right: 1%;
-    margin-left: 1%;
-    height: 50%;
-  }
-
-  .left_mod {
-    height: 50%;
-  }
-
-  .right_mod {
-    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 50%;
+    margin-top: 10%;
   }
 }

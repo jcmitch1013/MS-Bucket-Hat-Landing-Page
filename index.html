@@ -7,13 +7,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap"
       rel="stylesheet"
     />
+
+
 
     <link rel="stylesheet" href="css/main.css" />
 
@@ -21,33 +23,44 @@
   </head>
 
   <body>
+    <header>
+      <a href="https://www.marksabinodesign.com/" target="blank_">
+        <img class="logo" src="img/logo.svg"/>
+      </a>
+
+    </header>
+
+
     <div class="overlay hidden"></div>
-    <div id="main-page">
-      <a href="https://www.marksabinodesign.com/" target="blank_"
-        ><img class="logo" src="img/logo.svg"
-      /></a>
+
       <div class="hero-text">
-        <h3>Handmade by Mark Sabino</h3>
-        <h1>Reconstructed Bucket Hat</h1>
+        <h1><span class="handmade-txt">Handmade</span> by <span class="mark-btn">Mark Sabino</span></h1>
+        <h3>Reconstructed Bucket Hat</h3>
         <h5>
-          Originally custom made from sewn together Yankee hats, <br />
-          this redux keeps the same feel and is now made with <br />
+          Originally made with deconstructed Yankee hats, <br />
+          the redux keeps the same feel but is now made with <br />
           heavyweight canvas and blasted with embrodiered logos.
         </h5>
       </div>
 
-      <a
-        href="https://www.marksabinodesign.com/product-page/logo-trucker"
-        target="_blank"
-      >
-        <img class="shop-now-btn" src="img/shop_now_button.svg"
-      /></a>
+      <a href="https://www.marksabinodesign.com/product-page/logo-trucker"
+      target="_blank" >
+      <button class="shop-now-btn">Shop Now</button> </a>
+
+
+
+
+<div class="product-images">
+      <img src="img/hat.png" class="main-image">
+
 
       <div class="img-gallery">
         <img class="pop-up" id="hat_left" src="/img/hat_left.png" />
-        <img class="pop-up" id="mark_selfie" src="/img/mark_selfie.png" />
         <img class="pop-up" id="hat_right" src="/img/hat_right.png" />
       </div>
+
+    </div>
+
 
       <div class="modal-images hidden">
         <img class="left_mod hidden" src="img/hat_left.png" />
@@ -55,6 +68,7 @@
         <img class="right_mod hidden" src="img/hat_right.png" />
       </div>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
